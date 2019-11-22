@@ -23,4 +23,8 @@ public class Calculator{
     public double minus(double x, double y){
         return x - y;
     }
+    
+    public double div (double x, double y){
+        return x/y;
+    }
 }
