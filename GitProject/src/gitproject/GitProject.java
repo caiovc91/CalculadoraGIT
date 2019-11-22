@@ -5,18 +5,30 @@
  */
 package gitproject;
 
-/**
- *
- * @author ca40044411
- */
-public class GitProject {
+import java.util.ArrayList;
+import java.util.Random;
 
-    /**
-     * @param args the command line arguments
-     */
+public class GitProject {
+    private int rodadas;
+    private static ArrayList<Integer> vet_jogadas = new ArrayList<Integer>();
+    private static ArrayList<Integer> jogada_atual = new ArrayList<Integer>();
+    
+public static void gen_Game(){
+        Random rand = new Random();
+        for(int x = 0; x < 100; x++){
+            vet_jogadas.add(rand.nextInt(4) + 1);
+            System.out.println(vet_jogadas);
+        }    
+}
+
+    public static void get_step(){
+        int rodada = 1;
+        
+        
+        
+    }
     public static void main(String[] args) {
-        System.out.println("Oi");  
-// TODO code application logic here
+        gen_Game();
     }
     
 }
